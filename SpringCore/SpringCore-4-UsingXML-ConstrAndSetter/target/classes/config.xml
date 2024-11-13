@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    <bean class="com.ar.pojo.Address" id="addId">
+        <property name="houseNo" value="2366" />
+        <property name="street" value="bethamcherla" />
+        <property name="city"  value="Kurnool" />
+    </bean>
+    <bean class="com.ar.pojo.Student" id="stdId">
+        <property name="id" value="101" />
+        <property name="name" value="Pavan Kumar" />
+        <property name="address"  ref="addId" />
+    </bean>-->
+
+    <bean class="com.ar.pojo.Address" id = "addId">
+        <constructor-arg value="2366" />
+        <constructor-arg value="bethamcherla" />
+        <constructor-arg value="Kurnool" />
+    </bean>
+    <bean class="com.ar.pojo.Student" id = "stdId">
+        <constructor-arg value="101" />
+        <constructor-arg value="Pavan" />
+        <constructor-arg ref="addId" />
+    </bean>
+</beans>
