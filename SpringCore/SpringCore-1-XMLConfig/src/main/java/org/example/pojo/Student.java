@@ -5,6 +5,7 @@ public class Student {
     private String name;
     private String address;
 
+    //getter & setters
     public Student() {}
     public Student(int id, String name, String address) {
         this.id = id;
